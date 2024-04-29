@@ -1,41 +1,42 @@
 {
-    "name" : "forxer/laravel-gravatar",
-    "description" : "A library providing easy gravatar integration in a Laravel project.",
-    "keywords" : [
+    "name": "forxer/laravel-gravatar",
+    "description": "A library providing easy gravatar integration in a Laravel project.",
+    "keywords": [
         "gravatar",
         "laravel"
     ],
-    "type" : "library",
-    "license" : "MIT",
-    "authors" : [{
-            "name" : "Vincent Garnier",
-            "email" : "forxer@gmail.org"
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Garnier",
+            "email": "forxer@gmail.org"
         }
     ],
-    "support" : {
-        "issues" : "https://github.com/forxer/laravel-gravatar/issues",
-        "email" : "forxer@gmail.com"
+    "support": {
+        "issues": "https://github.com/forxer/laravel-gravatar/issues",
+        "email": "forxer@gmail.com"
     },
-    "require" : {
-        "php" : "^8.0.0",
-        "illuminate/support" : "^8.0 || ^9.0 || ^10.0",
-        "forxer/gravatar" : "^4.0"
+    "require": {
+        "php": "^8.0.0",
+        "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0",
+        "forxer/gravatar": "^4.0"
     },
-    "autoload" : {
-        "psr-4" : {
-            "LaravelGravatar\\" : "src"
+    "autoload": {
+        "psr-4": {
+            "LaravelGravatar\\": "src"
         },
-        "files" : [
+        "files": [
             "src/helpers.php"
         ]
     },
-    "minimum-stability" : "dev",
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
                 "LaravelGravatar\\ServiceProvider"
             ],
-            "aliases":{
+            "aliases": {
                 "Gravatar": "LaravelGravatar\\Facades\\Gravatar"
             }
         }
